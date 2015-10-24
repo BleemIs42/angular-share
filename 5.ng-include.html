@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<!-- // <script src="angular-1.0.0.min.js"></script> -->
+	<script src="angular-1.2.0.min.js"></script>
+
+	<!-- // <script src="angular-1.3.0.min.js"></script> -->
+	<!-- // <script src="angular-1.4.0.min.js"></script> -->
+	<!-- // <script src="angular-1.5.0.min.js"></script> -->
+</head>
+<body ng-app>
+
+	<form >
+		<input type="text" ng-model="yourname" placeholder="yourname">
+		<p>Hello,{{yourname || "World"}}!</p>
+	</form>
+
+	<!-- 必须是字符串 -->
+	<div ng-include=" 'tpl.html' "></div>   
+	
+</body>
+</html>
+	
